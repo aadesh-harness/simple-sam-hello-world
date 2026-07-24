@@ -16,7 +16,7 @@ Resources:
     Properties:
       CodeUri: hello-world/
       Handler: app.lambdaHandler
-      Runtime: nodejs12.x
+      Runtime: nodejs20.x
       Events:
         HelloWorld:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
@@ -28,7 +28,7 @@ Resources:
     Properties:
       CodeUri: users/
       Handler: function.getAllUsers
-      Runtime: nodejs12.x
+      Runtime: nodejs20.x
       Events:
         GetAllUsers:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
@@ -40,7 +40,7 @@ Resources:
     Properties:
       CodeUri: users/
       Handler: function.getUser
-      Runtime: nodejs12.x
+      Runtime: nodejs20.x
       Events:
         GetUser:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
@@ -82,7 +82,7 @@ Resources:
     Properties:
       CodeUri: users/
       Handler: function.createUser
-      Runtime: nodejs12.x
+      Runtime: nodejs20.x
       Events:
         CreateUser:
           Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
